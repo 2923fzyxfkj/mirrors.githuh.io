@@ -3,22 +3,17 @@
         <title>Download Ollama DeepSeek Model</title>
         <meta charset="utf-8"></meta>
         <script>
-            const { exec } = require("child_process")
-            try {
-                exec("ollama run deepseek-r1:7b")
-            } catch (e) {
-                console.groupCollapsed("Error")
-                console.group("请先安装 Ollama:")
-                console.warn("请先安装 Ollama")
-                console.error("报错:" + e)
-                console.groupEnd()
-                console.group("报错:")
-                console.log("命令:")
-                console.error("> ollama run deepseek-r1:7b\n" + e)
-                console.warn("信息:请先安装 Ollama\n命令:ollama run deepseek-r1:7b\n报错:" + e)
-                console.groupEnd()
-                console.groupEnd()
-            }
+            console.groupCollapsed("Error")
+            console.group("请先安装 Ollama:")
+            console.warn("请先安装 Ollama")
+            console.error("报错:" + e)
+            console.groupEnd()
+            console.group("报错:")
+            console.log("命令:")
+            console.error("> ollama run deepseek-r1:7b\n" + e)
+            console.warn("信息:请先安装 Ollama\n命令:ollama run deepseek-r1:7b\n报错:" + e)
+            console.groupEnd()
+            console.groupEnd()
         </script>
     </head>
 </html>
